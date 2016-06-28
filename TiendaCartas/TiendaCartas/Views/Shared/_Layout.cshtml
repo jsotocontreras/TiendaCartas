@@ -1,5 +1,7 @@
 ﻿<!DOCTYPE html>
+
 <html>
+
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta charset="utf-8" />
@@ -9,7 +11,9 @@
     @Scripts.Render("~/bundles/modernizr")
 
 </head>
+
 <body>
+   
     <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
@@ -30,6 +34,57 @@
             </div>
         </div>
     </div>
+    <div class="navbar-left">
+        <style type="text/css">
+            body{
+                margin:20px;
+            }
+            .titulonavleft {
+                font-size: 30pt;
+                font-family: Brush Script MT;
+                
+            }
+            .cuerporec{
+                font-size:15pt;
+                font-family:'Comic Sans MS';
+                border:solid 2px green;
+
+                
+            }
+
+            .cuerporec li{
+                margin:6px;
+                 border-bottom:solid 2px green;
+                 padding:5px;
+                 list-style-image:url()
+            }
+            .cuerporec a:hover{
+                text-decoration:none;
+                font-weight:bolder;
+                color: red;
+            }
+            li.ultimo{
+                border-bottom:none;
+            }
+
+        </style>
+        <div class="titulonavleft">
+            
+            Secciones
+        </div>
+        
+        <div class="cuerporec">
+            
+            <ul>
+                <li><a href=@Href("~/Home/Index")>Inicio</a></li>
+                <li><a href=@Href("~/Carrito/Index")>Carrito</a></li>
+                <li><a href="#">Cartas MyL</a></li>
+                <li><a href="#">Cartas Force of Will</a></li>
+                <li class="ultimo"><a href="#">Otros Productos</a></li>
+            </ul>
+        </div>
+    </div>
+        
     <div class="container body-content">
         @RenderBody()
         <hr />
@@ -42,4 +97,5 @@
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
 </body>
+
 </html>
