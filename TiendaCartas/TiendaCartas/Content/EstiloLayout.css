@@ -13,22 +13,22 @@ body {
             
       }
  .container.body-content{
-    width: auto;
-    height:auto;
-    margin-left: 290px;
-    background-color:mediumaquamarine;
+    width: 900px;
+    height:600px;
+    margin-left: 400px;
+    background-color:white;
     padding:5px;
  }
 .cuerporec li.titulonavleft {
                 font-size: 30pt;
                 font-family: Comic Sans MS;
-                list-style:none;
                 list-style-image:none;
                 font: bolder;
                 
             }
 .cuerporec{
                 float:left;
+                margin-left:180px;
                 background-color:aliceblue;
                 font-size:15pt;
                 font-family:'Comic Sans MS';
