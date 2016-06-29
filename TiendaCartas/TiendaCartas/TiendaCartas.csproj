@@ -188,9 +188,10 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
-    <Content Include="Images\alice_background.png" />
     <Content Include="Images\as-de-pica_opt.png" />
     <Content Include="Images\img fondo body.jpg" />
+    <Content Include="Images\left_background.png" />
+    <Content Include="Images\right_background.png" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
