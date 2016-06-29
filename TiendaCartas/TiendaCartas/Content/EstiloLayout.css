@@ -1,0 +1,49 @@
+﻿*{
+    position:relative;
+}
+
+.cuerpoCentral{
+    border: solid 5px green;
+    margin:600px, 400px,600px,600px;
+}
+ body {
+       margin: 20px;
+       background-image: url('../../Images/img fondo body.jpg');
+                
+            
+      }
+li.titulonavleft {
+                font-size: 30pt;
+                font-family: Brush Script MT;
+                list-style:none;
+                
+            }
+.cuerporec{
+                float:left;
+                background-color:aliceblue;
+                font-size:15pt;
+                font-family:'Comic Sans MS';
+                border:solid 2px green;
+                
+                
+            }
+
+.cuerporec li {
+                    
+                    margin: 6px;
+                    border-bottom: solid 2px green;
+                    padding: 5px;
+                    list-style-image: url("../../Images/as-de-pica_opt.png")
+                    
+                    
+                }
+.cuerporec a:hover{
+                text-decoration:none;
+                font-weight:bolder;
+                color: red;
+            }
+li.ultimo{
+                border-bottom:none;
+            }
+
+      
