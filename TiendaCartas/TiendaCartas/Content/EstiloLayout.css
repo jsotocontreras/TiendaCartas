@@ -2,20 +2,25 @@
     position:relative;
 }
 
-.cuerpoCentral{
-    border: solid 5px green;
-    margin:600px, 400px,600px,600px;
-}
+
  body {
        margin: 20px;
        background-image: url('../../Images/img fondo body.jpg');
                 
             
       }
-li.titulonavleft {
+ .container.body-content{
+    width: 990px;
+    height:auto;
+    margin-left: 290px;
+    background-color:mediumaquamarine;
+    padding:5px;
+ }
+.cuerporec li.titulonavleft {
                 font-size: 30pt;
                 font-family: Brush Script MT;
                 list-style:none;
+                list-style-image:none;
                 
             }
 .cuerporec{
