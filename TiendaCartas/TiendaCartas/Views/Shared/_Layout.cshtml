@@ -13,7 +13,7 @@
 </head>
 
 <body>
-   
+  
     <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
@@ -36,28 +36,35 @@
     </div>
     <div class="navbar-left">
         <style type="text/css">
-            body{
+            body {
                 margin:20px;
+                background-image: url('../../Images/img fondo body.jpg');
             }
-            .titulonavleft {
+            li.titulonavleft {
                 font-size: 30pt;
                 font-family: Brush Script MT;
+                list-style:none;
                 
             }
             .cuerporec{
+                float:left;
+                background-color:aliceblue;
                 font-size:15pt;
                 font-family:'Comic Sans MS';
                 border:solid 2px green;
-
+                
                 
             }
 
-            .cuerporec li{
-                margin:6px;
-                 border-bottom:solid 2px green;
-                 padding:5px;
-                 list-style-image:url()
-            }
+                .cuerporec li {
+                    
+                    margin: 6px;
+                    border-bottom: solid 2px green;
+                    padding: 5px;
+                    list-style-image: url("../../Images/as-de-pica_opt.png")
+                    
+                    
+                }
             .cuerporec a:hover{
                 text-decoration:none;
                 font-weight:bolder;
@@ -68,14 +75,12 @@
             }
 
         </style>
-        <div class="titulonavleft">
-            
-            Secciones
-        </div>
+        
         
         <div class="cuerporec">
             
             <ul>
+                <li class="titulonavleft">Secciones</li>
                 <li><a href=@Href("~/Home/Index")>Inicio</a></li>
                 <li><a href=@Href("~/Carrito/Index")>Carrito</a></li>
                 <li><a href="#">Cartas MyL</a></li>
@@ -91,6 +96,8 @@
         <footer>
             <p>&copy; @DateTime.Now.Year - Mi aplicación ASP.NET</p>
         </footer>
+    </div>
+    <div id="cuerpoCentral">
     </div>
 
     @Scripts.Render("~/bundles/jquery")
