@@ -10,7 +10,7 @@
             
       }
  .container.body-content{
-    width: 990px;
+    width: auto;
     height:auto;
     margin-left: 290px;
     background-color:mediumaquamarine;
@@ -18,9 +18,10 @@
  }
 .cuerporec li.titulonavleft {
                 font-size: 30pt;
-                font-family: Brush Script MT;
+                font-family: Comic Sans MS;
                 list-style:none;
                 list-style-image:none;
+                font: bolder;
                 
             }
 .cuerporec{
