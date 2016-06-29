@@ -3,9 +3,14 @@
 }
 
 
- body {
-       margin: 20px;
-       background-image: url('../../Images/img fondo body.jpg');
+body {
+    margin: 20px;
+    background-image: url('../../Images/alice_background.png');
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
                 
             
       }
