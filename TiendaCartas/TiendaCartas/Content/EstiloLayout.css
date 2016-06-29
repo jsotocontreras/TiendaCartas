@@ -5,11 +5,9 @@
 
 body {
     margin: 20px;
-    background-image: url('../../Images/alice_background.png');
-    background-position: top left;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
+    background:  url('../../Images/alice_background.png') no-repeat left top fixed;
+ 
+  
 
                 
             
