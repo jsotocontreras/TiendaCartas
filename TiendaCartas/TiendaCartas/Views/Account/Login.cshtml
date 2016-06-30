@@ -7,12 +7,13 @@
 
 <h2>@ViewBag.Title.</h2>
 <div class="iniciarSesion">
-    <p style="font-size:15pt;">Ingrese Correo electronico:</p>
-    <input type="email" />
-    <p style="font-size:15pt;">Ingrese Contraseña:</p>
-    <input type="password" />  
+    <form>
+    <input type="text" placeholder="&#128272; Usuario" name="usuario" />
+    <br /> 
+    <input type="password" placeholder="&#128272; Contraseña" name="clave" />  
+   
     <br />
-    <br />
-    <input type="button" class="btn-default" value="Iniciar Sesion"/>
+    <input type="submit" class="btn-default" value="Iniciar Sesion"/>
+     </form>
 
 </div>
