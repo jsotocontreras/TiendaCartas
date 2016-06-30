@@ -192,6 +192,7 @@
     <Content Include="Images\img fondo body.jpg" />
     <Content Include="Images\left_background.png" />
     <Content Include="Images\right_background.png" />
+    <Content Include="Images\Untitled.png" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
