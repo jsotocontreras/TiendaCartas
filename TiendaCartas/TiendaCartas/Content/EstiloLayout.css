@@ -5,12 +5,12 @@
 
 body {
     margin: 20px;
-    background:  url('../../Images/left_background.png') no-repeat left top fixed, url('../../Images/right_background.png') no-repeat right top fixed;
+    background:  url('../../Images/left_background.png') no-repeat left top fixed , url('../../Images/right_background.png') no-repeat right top fixed;
                
       }
  .container.body-content{
     width: 900px;
-    height:600px;
+    height:6000px;
     margin-left: 400px;
     background-color:white;
     padding:5px;
