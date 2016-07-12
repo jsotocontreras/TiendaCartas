@@ -28,11 +28,13 @@
                
             </div>
             <div class="navbar-collapse collapse">
-                @Html.ActionLink("Tienda de cartones", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                @Html.ActionLink("Health Point", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
                 <ul class="nav navbar-nav">
                 
                     <li>@Html.ActionLink("Inicio", "Index", "Home")</li>
                     <li>@Html.ActionLink("Carrito", "Index", "Carrito")</li>
+                    <li><input type="text" ng-model="búsqueda" style="font-size:15px" position="0" onsubmit="openNav()"></li>
+                    
                     
                 </ul>
                 @Html.Partial("_LoginPartial")
@@ -79,9 +81,10 @@ li {
     <li><a href="">Force of Will</a></li>
     <li><a href="">Magic</a></li>
     <li><a href="">Yu-Gi-Oh!</a></li>
-          <li><a href="">Tierras Magicas</a></li>
-          <li><a href="">Cazaurio</a></li>
-          <li><a href="">Humankind</a></li>
+    <li><a href="">Tierras Magicas</a></li>
+    <li><a href="">Cazaurio</a></li>
+    <li><a href="">Humankind</a></li>
+    <li><a href="">Accesorios</a></li>
 
 
       
