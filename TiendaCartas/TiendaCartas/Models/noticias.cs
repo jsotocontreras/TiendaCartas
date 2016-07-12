@@ -17,6 +17,6 @@ namespace TiendaCartas.Models
         public int codigo { get; set; }
         public string nombre_noticia { get; set; }
         public string descripcion_noticia { get; set; }
-        public byte[] foto_noticia { get; set; }
+        public string foto_noticia { get; set; }
     }
 }

@@ -10,17 +10,17 @@ using TiendaCartas.Models;
 
 namespace TiendaCartas.Controllers
 {
-    public class productoesController : Controller
+    public class productosController : Controller
     {
-        private tiendacartasEntities1 db = new tiendacartasEntities1();
+        private tiendacartasEntities db = new tiendacartasEntities();
 
-        // GET: productoes
+        // GET: productos
         public ActionResult Index()
         {
             return View(db.producto.ToList());
         }
 
-        // GET: productoes/Details/5
+        // GET: productos/Details/5
         public ActionResult Details(int? id)
         {
             if (id == null)
@@ -35,13 +35,13 @@ namespace TiendaCartas.Controllers
             return View(producto);
         }
 
-        // GET: productoes/Create
+        // GET: productos/Create
         public ActionResult Create()
         {
             return View();
         }
 
-        // POST: productoes/Create
+        // POST: productos/Create
         // Para protegerse de ataques de publicación excesiva, habilite las propiedades específicas a las que desea enlazarse. Para obtener 
         // más información vea http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
@@ -58,7 +58,7 @@ namespace TiendaCartas.Controllers
             return View(producto);
         }
 
-        // GET: productoes/Edit/5
+        // GET: productos/Edit/5
         public ActionResult Edit(int? id)
         {
             if (id == null)
@@ -73,7 +73,7 @@ namespace TiendaCartas.Controllers
             return View(producto);
         }
 
-        // POST: productoes/Edit/5
+        // POST: productos/Edit/5
         // Para protegerse de ataques de publicación excesiva, habilite las propiedades específicas a las que desea enlazarse. Para obtener 
         // más información vea http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
@@ -89,7 +89,7 @@ namespace TiendaCartas.Controllers
             return View(producto);
         }
 
-        // GET: productoes/Delete/5
+        // GET: productos/Delete/5
         public ActionResult Delete(int? id)
         {
             if (id == null)
@@ -104,7 +104,7 @@ namespace TiendaCartas.Controllers
             return View(producto);
         }
 
-        // POST: productoes/Delete/5
+        // POST: productos/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
