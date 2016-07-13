@@ -26,7 +26,7 @@ namespace TiendaCartas.Models
         public string correo { get; set; }
         public Nullable<int> edad { get; set; }
         public string tipo_usuario { get; set; }
-        public string foto_usuario { get; set; }
+        public byte[] foto_usuario { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<compra> compra { get; set; }

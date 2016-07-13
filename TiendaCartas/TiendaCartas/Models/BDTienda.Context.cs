@@ -13,10 +13,10 @@ namespace TiendaCartas.Models
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class tiendacartasEntities : DbContext
+    public partial class tiendacartasEntities1 : DbContext
     {
-        public tiendacartasEntities()
-            : base("name=tiendacartasEntities")
+        public tiendacartasEntities1()
+            : base("name=tiendacartasEntities1")
         {
         }
     
