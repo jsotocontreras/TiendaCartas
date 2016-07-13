@@ -6,7 +6,6 @@
 
 <h2>Sistema de búsqueda avanzada</h2>
 <!-- CSS a mover -->
-
 <html>
 <style>
 body {
@@ -22,7 +21,7 @@ body {
     right: 0;
     background-color: #111;
     overflow-x: hidden;
-    transition: 0.3s;
+    transition: 0.5s;
     padding-top: 60px;
 }
 
@@ -39,37 +38,38 @@ body {
     color: #818181;
 }
 
-.closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px !important;
-    margin-left: 50px;
+    .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px !important;
+        margin-left: 50px;
 }
 
-media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
 </style>
 <body>
 
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
         <a>Resultados:</a>
-
-        <script>
-            function openNav() {
-                document.getElementById("mySidenav").style.width = "250px";
-            }
-
-            function closeNav() {
-                document.getElementById("mySidenav").style.width = "0";
-            }
-        </script>
     </div>
+
+    <h2>Animated Sidenav Example</h2>
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">☰ open</span>
+
+    <script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+    </script>
 
 </body>
 </html>
+
+
 
 
