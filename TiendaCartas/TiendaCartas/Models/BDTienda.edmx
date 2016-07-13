@@ -12,7 +12,7 @@
           <Property Name="id_compra" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="id_usuario" Type="int" />
           <Property Name="id_producto" Type="int" />
-          <Property Name="valor_total" Type="int" />
+          <Property Name="valor_total" Type="money" />
           <Property Name="fecha" Type="date" />
           <Property Name="id_pago" Type="int" />
         </EntityType>
@@ -23,7 +23,7 @@
           <Property Name="codigo" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="nombre_noticia" Type="varchar" MaxLength="100" />
           <Property Name="descripcion_noticia" Type="varchar" MaxLength="8000" />
-          <Property Name="foto_noticia" Type="varchar" MaxLength="30" />
+          <Property Name="foto_noticia" Type="image" />
         </EntityType>
         <EntityType Name="producto">
           <Key>
@@ -31,11 +31,11 @@
           </Key>
           <Property Name="id_producto" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="nombre_producto" Type="varchar" MaxLength="50" />
-          <Property Name="precio" Type="int" />
+          <Property Name="precio" Type="money" />
           <Property Name="descripcion" Type="varchar" MaxLength="300" />
           <Property Name="categoria" Type="varchar" MaxLength="25" />
           <Property Name="stock" Type="int" />
-          <Property Name="foto_producto" Type="varchar" MaxLength="30" />
+          <Property Name="foto_producto" Type="image" />
         </EntityType>
         <EntityType Name="tipo_pago">
           <Key>
@@ -54,7 +54,7 @@
           <Property Name="correo" Type="varchar" MaxLength="30" />
           <Property Name="edad" Type="int" />
           <Property Name="tipo_usuario" Type="varchar" MaxLength="15" />
-          <Property Name="foto_usuario" Type="varchar" MaxLength="30" />
+          <Property Name="foto_usuario" Type="image" />
         </EntityType>
         <Association Name="fk_pago">
           <End Role="tipo_pago" Type="Self.tipo_pago" Multiplicity="0..1" />
@@ -123,7 +123,7 @@
           <Property Name="id_compra" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="id_usuario" Type="Int32" />
           <Property Name="id_producto" Type="Int32" />
-          <Property Name="valor_total" Type="Int32" />
+          <Property Name="valor_total" Type="Decimal" Precision="19" Scale="4" />
           <Property Name="fecha" Type="DateTime" Precision="0" />
           <Property Name="id_pago" Type="Int32" />
           <NavigationProperty Name="tipo_pago" Relationship="Self.fk_pago" FromRole="compra" ToRole="tipo_pago" />
@@ -137,7 +137,7 @@
           <Property Name="codigo" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="nombre_noticia" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
           <Property Name="descripcion_noticia" Type="String" MaxLength="8000" FixedLength="false" Unicode="false" />
-          <Property Name="foto_noticia" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="foto_noticia" Type="Binary" MaxLength="Max" FixedLength="false" />
         </EntityType>
         <EntityType Name="producto">
           <Key>
@@ -145,11 +145,11 @@
           </Key>
           <Property Name="id_producto" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="nombre_producto" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-          <Property Name="precio" Type="Int32" />
+          <Property Name="precio" Type="Decimal" Precision="19" Scale="4" />
           <Property Name="descripcion" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
           <Property Name="categoria" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
           <Property Name="stock" Type="Int32" />
-          <Property Name="foto_producto" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="foto_producto" Type="Binary" MaxLength="Max" FixedLength="false" />
           <NavigationProperty Name="compra" Relationship="Self.fk_producto" FromRole="producto" ToRole="compra" />
         </EntityType>
         <EntityType Name="tipo_pago">
@@ -170,7 +170,7 @@
           <Property Name="correo" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
           <Property Name="edad" Type="Int32" />
           <Property Name="tipo_usuario" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
-          <Property Name="foto_usuario" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="foto_usuario" Type="Binary" MaxLength="Max" FixedLength="false" />
           <NavigationProperty Name="compra" Relationship="Self.fk_usuario" FromRole="usuario" ToRole="compra" />
         </EntityType>
         <Association Name="fk_pago">
@@ -209,7 +209,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="tiendacartasEntities" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="tiendacartasEntities1" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="compra" EntityType="Self.compra" />
           <EntitySet Name="noticias" EntityType="Self.noticias" />
           <EntitySet Name="producto" EntityType="Self.producto" />
@@ -233,7 +233,7 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="tiendacartasModelStoreContainer" CdmEntityContainer="tiendacartasEntities">
+        <EntityContainerMapping StorageEntityContainer="tiendacartasModelStoreContainer" CdmEntityContainer="tiendacartasEntities1">
           <EntitySetMapping Name="compra">
             <EntityTypeMapping TypeName="tiendacartasModel.compra">
               <MappingFragment StoreEntitySet="compra">
