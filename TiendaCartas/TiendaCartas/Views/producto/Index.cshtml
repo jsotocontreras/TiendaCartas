@@ -1,11 +1,11 @@
 ﻿@model IEnumerable<TiendaCartas.Models.producto>
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Catalogo";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Index</h2>
+<h2>Catalogo</h2>
 
 <p>
     @Html.ActionLink("Agregar", "Create")
@@ -36,6 +36,9 @@
 @foreach (var item in Model) {
     <tr>
         <td>
+            @Html.DisplayFor(modelItem => item.foto_producto)
+        </td>
+        <td>
             @Html.DisplayFor(modelItem => item.nombre_producto)
         </td>
         <td>
@@ -50,13 +53,18 @@
         <td>
             @Html.DisplayFor(modelItem => item.stock)
         </td>
+       
         <td>
-            @Html.DisplayFor(modelItem => item.foto_producto)
-        </td>
-        <td>
-            @Html.ActionLink("Editar", "Edit", new { id=item.id_producto }) |
-            @Html.ActionLink("Detalle", "Details", new { id=item.id_producto }) |
-            @Html.ActionLink("Eliminar", "Delete", new { id=item.id_producto })
+            @if (item.nombre_producto.Equals("MyL")) {
+                @Html.ActionLink("Editar", "Edit", new { id = item.id_producto }) |
+            } 
+            @if (item.nombre_producto.Equals("MyL")) {
+                @Html.ActionLink("Detalle", "Details", new { id = item.id_producto }) |
+            } 
+            @if (item.nombre_producto.Equals("MyL")) {
+                @Html.ActionLink("Eliminar", "Delete", new { id = item.id_producto })
+            }
+            
         </td>
     </tr>
 }

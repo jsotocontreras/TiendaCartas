@@ -22,11 +22,11 @@ namespace TiendaCartas.Models
     
         public int id_producto { get; set; }
         public string nombre_producto { get; set; }
-        public Nullable<decimal> precio { get; set; }
+        public Nullable<int> precio { get; set; }
         public string descripcion { get; set; }
         public string categoria { get; set; }
         public Nullable<int> stock { get; set; }
-        public byte[] foto_producto { get; set; }
+        public string foto_producto { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<compra> compra { get; set; }

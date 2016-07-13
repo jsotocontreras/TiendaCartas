@@ -1,14 +1,15 @@
 ﻿@model TiendaCartas.Models.producto
 
 @{
-    ViewBag.Title = "Details";
+    ViewBag.Title = "Eliminar";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Detalle</h2>
+<h2>Eliminar</h2>
 
+<h3>¿Está seguro de eliminar el producto?</h3>
 <div>
-    <h4>producto</h4>
+    <h4>producto:</h4>
     <hr />
     <dl class="dl-horizontal">
         <dt>
@@ -60,8 +61,13 @@
         </dd>
 
     </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Eliminar" class="btn btn-default" /> |
+            @Html.ActionLink("Regresar a lista", "Index")
+        </div>
+    }
 </div>
-<p>
-    @Html.ActionLink("Editar", "Edit", new { id = Model.id_producto }) |
-    @Html.ActionLink("Regresar a lista", "Index")
-</p>

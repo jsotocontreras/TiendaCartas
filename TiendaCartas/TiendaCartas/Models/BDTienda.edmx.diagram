@@ -4,15 +4,14 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="d6795b825d144be49a61ccf3803f86e4" Name="Diagram1">
-        <EntityTypeShape EntityType="tiendacartasModel.compra" Width="1.5" PointX="0.5" PointY="2.375" IsExpanded="true" />
-        <EntityTypeShape EntityType="tiendacartasModel.noticias" Width="1.5" PointX="4.875" PointY="3.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="tiendacartasModel.producto" Width="1.5" PointX="3" PointY="0.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="tiendacartasModel.tipo_pago" Width="1.5" PointX="3" PointY="3.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="tiendacartasModel.usuario" Width="1.5" PointX="3" PointY="4.875" IsExpanded="true" />
+      <Diagram DiagramId="32575d2b11f745acaf98e443c18e4cb4" Name="Diagram1">
+        <EntityTypeShape EntityType="tiendacartasModel.compra" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="tiendacartasModel.noticias" Width="1.5" PointX="5.125" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="tiendacartasModel.producto" Width="1.5" PointX="0.75" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="tiendacartasModel.tipo_pago" Width="1.5" PointX="4.5" PointY="4.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="tiendacartasModel.usuario" Width="1.5" PointX="1.5" PointY="4.5" IsExpanded="true" />
         <AssociationConnector Association="tiendacartasModel.fk_pago" ManuallyRouted="false" />
-        <AssociationConnector Association="tiendacartasModel.fk_producto" ManuallyRouted="false" >
-        </AssociationConnector>
+        <AssociationConnector Association="tiendacartasModel.fk_producto" ManuallyRouted="false" />
         <AssociationConnector Association="tiendacartasModel.fk_usuario" ManuallyRouted="false" />
       </Diagram>
     </edmx:Diagrams>

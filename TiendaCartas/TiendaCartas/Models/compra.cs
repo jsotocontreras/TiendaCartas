@@ -17,7 +17,7 @@ namespace TiendaCartas.Models
         public int id_compra { get; set; }
         public Nullable<int> id_usuario { get; set; }
         public Nullable<int> id_producto { get; set; }
-        public Nullable<decimal> valor_total { get; set; }
+        public Nullable<int> valor_total { get; set; }
         public Nullable<System.DateTime> fecha { get; set; }
         public Nullable<int> id_pago { get; set; }
     
