@@ -170,11 +170,10 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\BúsquedaController.cs" />
     <Compile Include="Controllers\CarritoController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
-    <Compile Include="Controllers\PerfilController.cs" />
-    <Compile Include="Controllers\productosController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -296,12 +295,12 @@
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Carrito\Index.cshtml" />
-    <Content Include="Views\Perfil\Index.cshtml" />
     <Content Include="Views\productos\Create.cshtml" />
     <Content Include="Views\productos\Delete.cshtml" />
     <Content Include="Views\productos\Details.cshtml" />
     <Content Include="Views\productos\Edit.cshtml" />
     <Content Include="Views\productos\Index.cshtml" />
+    <Content Include="Views\Búsqueda\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
