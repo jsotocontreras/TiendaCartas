@@ -27,13 +27,76 @@
                 </button>
                
             </div>
+            <!---->
+            <html>
+            <style>
+                body {
+                    font-family: "Lato", sans-serif;
+                }
+
+                .sidenav {
+                    height: 100%;
+                    width: 0;
+                    position: fixed;
+                    z-index: 9999;
+                    top: 0;
+                    right: 0;
+                    background-color: #111;
+                    overflow-x: hidden;
+                    transition: 0.5s;
+                    padding-top: 60px;
+                }
+
+                    .sidenav a {
+                        padding: 8px 8px 8px 32px;
+                        text-decoration: none;
+                        font-size: 25px;
+                        color: #818181;
+                        display: block;
+                        transition: 0.3s;
+                    }
+
+                        .sidenav a:hover, .offcanvas a:focus {
+                            color: #818181;
+                        }
+
+                .closebtn {
+                    position: absolute;
+                    top: 0;
+                    right: 25px;
+                    font-size: 36px !important;
+                    margin-left: 50px;
+                }
+            </style>
+            <body>
+            <div ng-app="">
+                <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                    
+                    <a>Resultados: {{Search}}</a>
+                </div>
+            </div>
+                <script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "20%";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+                </script>
+
+            </body>
+        </html>
+            <!------>
+        
             <div class="navbar-collapse collapse">
                 @Html.ActionLink("Health Point", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
                 <ul class="nav navbar-nav">
                 
                     <li>@Html.ActionLink("Inicio", "Index", "Home")</li>
                     <li>@Html.ActionLink("Carrito", "Index", "Carrito")</li>
-                    <li><input type="text" ng-model="búsqueda" style="font-size:15px" position="0" onsubmit="openNav()"></li>
+                    <li><input type="text" ng-model="Search" onkeypress="openNav()"/></li>
                     
                     
                 </ul>
