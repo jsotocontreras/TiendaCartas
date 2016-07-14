@@ -1,0 +1,43 @@
+﻿@model TiendaCartas.Models.noticias
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>noticias</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.nombre_noticia)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nombre_noticia)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.descripcion_noticia)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.descripcion_noticia)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.foto_noticia)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.foto_noticia)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.codigo }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
