@@ -24,11 +24,16 @@
        
         counter--;
         showCurrent();
+       
     }, false);
+
     window.setInterval(function () {
         counter++;
         showCurrent();
+        counter > showCurrent
     }, 3000);
+
+    
 
 
 })();

@@ -3,31 +3,34 @@
 <html>
 
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - Health Point</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
     <link href="~/Content/EstiloLayout.css" rel="stylesheet" />
-    <template align="center"><a href=@Href("~/Home/Index")/><img src="~/Images/Untitled.png" width="500" height="300" alt="logo"></template>
+    <template align="center">
+        <a href=@Href("~/Home/Index") />
+        <img src="~/Images/Untitled.png" width="500" height="300" alt="logo">
+    </template>
 </head>
 
 <body>
-  
-    <div class="navbar navbar-inverse navbar-fixed-top nav" >
-    
+
+    <div class="navbar navbar-inverse navbar-fixed-top nav">
+
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
-                  
+
                 </button>
-               
+
             </div>
-            <!---->
+
             <html>
             <style>
                 body {
@@ -69,106 +72,117 @@
                 }
             </style>
             <body>
-            <div ng-app="">
-                <div id="mySidenav" class="sidenav">
-                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-                    
-                    <a>Resultados: {{Search}}</a>
-                </div>
-            </div>
-                <script>
-function openNav() {
-    document.getElementById("mySidenav").style.width = "20%";
-}
+                <div ng-app="">
+                    <div id="mySidenav" class="sidenav">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
 
-function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-}
+                        <a>Resultados: {{Search}}</a>
+                    </div>
+                </div>
+                <script>
+                    function openNav() {
+                        document.getElementById("mySidenav").style.width = "20%";
+                    }
+
+                    function closeNav() {
+                        document.getElementById("mySidenav").style.width = "0";
+                    }
                 </script>
 
             </body>
         </html>
-            <!------>
-        
-            <div class="navbar-collapse collapse">
-                @Html.ActionLink("Health Point", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
-                <ul class="nav navbar-nav">
-                
-                    <li>@Html.ActionLink("Inicio", "Index", "Home")</li>
-                    <li>@Html.ActionLink("Carrito", "Index", "Carrito")</li>
-                    <li><input type="text" ng-model="Search" onkeypress="openNav()"/></li>
-                    
-                    
-                </ul>
-                @Html.Partial("_LoginPartial")
-            </div>
+        <!------>
+
+        <div class="navbar-collapse collapse">
+            @Html.ActionLink("Health Point", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            <ul class="nav navbar-nav">
+
+                <li>@Html.ActionLink("Inicio", "Index", "Home")</li>
+                <li>@Html.ActionLink("Carrito", "Index", "Carrito")</li>
+                <li><input type="text" ng-model="Search" onkeypress="openNav()" /></li>
+
+
+            </ul>
+            @Html.Partial("_LoginPartial")
         </div>
     </div>
+</div>
 
-  <div class="nbar">
-    
-      <style>
-          
-      ul {
-    list-style-type: none;
-    position:center;
-    padding: 0;
-    overflow: hidden; 
-}
+<div class="nbar" id="nbar">
 
-      
-          li a{
-                  
-              float: left ;
-              display: inline;   
-              color: white;           
-              padding: 14px 16px;
-              text-decoration: none;       
-              background-color: #333;
+    <style>
 
-          }
-          li a:hover {
-    background-color: #111;
-    color: white;
-    text-decoration: none;
+        #nbar {
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 1000px;
+            background:  #333;
+        }
+        ul {
+            list-style-type: none;
+              margin-left: auto;
+            margin-right: auto;
+              
+            padding: 0;
+            overflow: hidden;
+        }
 
-}
-      </style>
-     
-      <ul >
-        
-         
-    <li><a href="">Mitos y Leyendas</a></li>
-    <li><a href="">Force of Will</a></li>
-    <li><a href="">Magic</a></li>
-    <li><a href="">Yu-Gi-Oh!</a></li>
-    <li><a href="">Tierras Magicas</a></li>
-    <li><a href="">Cazaurio</a></li>
-    <li><a href="">Humankind</a></li>
-    <li><a href="">Accesorios</a></li>
+        li {    margin-left: auto;
+            margin-right: auto;
+        }
 
+            li a {
+               
+                float: left;
+                display: inline;
+                color: white;
+                padding: 14px 16px;
+                text-decoration: none;
+                background-color: #333;
+            }
 
+                li a:hover {
+                    background-color: #111;
+                    color: white;
+                    text-decoration: none;
+                }
+    </style>
 
-      
-</ul>
+    <ul>
 
 
+        <li><a href="">Mitos y Leyendas</a></li>
+        <li><a href="">Force of Will</a></li>
+        <li><a href="">Magic</a></li>
+        <li><a href="">Yu-Gi-Oh!</a></li>
+        <li><a href="">Tierras Magicas</a></li>
+        <li><a href="">Cazaurio</a></li>
+        <li><a href="">Humankind</a></li>
+        <li><a href="">Accesorios</a></li>
 
-  </div>
-   
-    <div class="container body-content">
-        @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - Mi aplicación ASP.NET</p>
-        </footer>
-    </div>
-    <div id="cuerpoCentral">
-    </div>
 
-    @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
-    @RenderSection("scripts", required: false)
+
+
+    </ul>
+
+
+
+</div>
+
+
+<div class="container body-content">
+    @RenderBody()
+    <hr />
+    <footer>
+        <p>&copy; @DateTime.Now.Year - Mi aplicación ASP.NET</p>
+    </footer>
+</div>
+<div id="cuerpoCentral">
+</div>
+
+@Scripts.Render("~/bundles/jquery")
+@Scripts.Render("~/bundles/bootstrap")
+@RenderSection("scripts", required: false)
 </body>
 
 </html>
