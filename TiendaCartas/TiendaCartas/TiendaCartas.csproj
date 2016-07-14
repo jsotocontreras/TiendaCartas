@@ -172,9 +172,11 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\BúsquedaController.cs" />
     <Compile Include="Controllers\CarritoController.cs" />
+    <Compile Include="Controllers\compraController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\productoController.cs" />
+    <Compile Include="Controllers\usuarioController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -218,7 +220,6 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\EstiloLayout.css" />
-    <Content Include="Content\estiloLog.css" />
     <Content Include="Content\SlideshowStyles.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -228,6 +229,9 @@
     <Content Include="Images\img fondo body.jpg" />
     <Content Include="Images\left_background.png" />
     <Content Include="Images\right_background.png" />
+    <Content Include="Images\slideshow1.png" />
+    <Content Include="Images\slideshow2.png" />
+    <Content Include="Images\slideshow3.png" />
     <Content Include="Images\Untitled.png" />
     <Content Include="Models\BDTienda.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
@@ -302,6 +306,16 @@
     <Content Include="Views\producto\Details.cshtml" />
     <Content Include="Views\producto\Edit.cshtml" />
     <Content Include="Views\producto\Index.cshtml" />
+    <Content Include="Views\usuario\Create.cshtml" />
+    <Content Include="Views\usuario\Delete.cshtml" />
+    <Content Include="Views\usuario\Details.cshtml" />
+    <Content Include="Views\usuario\Edit.cshtml" />
+    <Content Include="Views\usuario\Index.cshtml" />
+    <Content Include="Views\compra\Create.cshtml" />
+    <Content Include="Views\compra\Delete.cshtml" />
+    <Content Include="Views\compra\Details.cshtml" />
+    <Content Include="Views\compra\Edit.cshtml" />
+    <Content Include="Views\compra\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

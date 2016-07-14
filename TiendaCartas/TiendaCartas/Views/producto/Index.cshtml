@@ -56,13 +56,11 @@
        
         <td>
             @if (item.nombre_producto.Equals("MyL")) {
-                @Html.ActionLink("Editar", "Edit", new { id = item.id_producto }) |
-            } 
-            @if (item.nombre_producto.Equals("MyL")) {
-                @Html.ActionLink("Detalle", "Details", new { id = item.id_producto }) |
-            } 
-            @if (item.nombre_producto.Equals("MyL")) {
-                @Html.ActionLink("Eliminar", "Delete", new { id = item.id_producto })
+                @Html.ActionLink("Editar,", "Edit", new { id = item.id_producto }) 
+           
+                @Html.ActionLink("Detalle,", "Details", new { id = item.id_producto }) 
+           
+                @Html.ActionLink("Eliminar  ", "Delete", new { id = item.id_producto })
             }
             
         </td>
