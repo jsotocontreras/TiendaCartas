@@ -175,7 +175,9 @@
     <Compile Include="Controllers\compraController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\noticiasController.cs" />
     <Compile Include="Controllers\productoController.cs" />
+    <Compile Include="Controllers\tipo_pagoController.cs" />
     <Compile Include="Controllers\usuarioController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -316,6 +318,16 @@
     <Content Include="Views\compra\Details.cshtml" />
     <Content Include="Views\compra\Edit.cshtml" />
     <Content Include="Views\compra\Index.cshtml" />
+    <Content Include="Views\tipo_pago\Create.cshtml" />
+    <Content Include="Views\tipo_pago\Delete.cshtml" />
+    <Content Include="Views\tipo_pago\Details.cshtml" />
+    <Content Include="Views\tipo_pago\Edit.cshtml" />
+    <Content Include="Views\tipo_pago\Index.cshtml" />
+    <Content Include="Views\noticias\Create.cshtml" />
+    <Content Include="Views\noticias\Delete.cshtml" />
+    <Content Include="Views\noticias\Details.cshtml" />
+    <Content Include="Views\noticias\Edit.cshtml" />
+    <Content Include="Views\noticias\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
