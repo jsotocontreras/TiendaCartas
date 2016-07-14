@@ -4,101 +4,120 @@
    
 }
 
-    <div class="slideshow">
-       <style>
+<div class="slideshow" id="Slide">
+    <style>
+        slideshow {
+            
+            position: absolute;
+            margin-left: 500px;
+            margin-bottom: 300px;
+            display: block;
+            overflow: scroll;
+        }
+
+        figure {
+            position: absolute;
+            opacity: 0;
+            transition: 1s opacity;
+        }
+
+        figcaption {
+            position:  ;
+            font-family: sans-serif;
+            font-size: .8em;
+            top: 0;
+            height: 25px;
+            padding: .25em;
+            color: #fff;
+            background: rgba(0,0,0, .25);
+            border-radius: 2px;
+        }
+
+            figcaption a {
+                color: #fff;
+            }
+
+        figure.show {
+            opacity: 1;
+            position: static;
+            transition: 1s opacity;
+        }
+
+        .next, .prev {
+            color: #fff;
+            position: page;
+            background: rgba(0,0,0, .6);
+            top: 50%;
+            z-index: 1;
+            font-size: 2em;
+            margin-top: -.75em;
+            opacity: .3;
+            user-select: none;
+            transition: 1s;
+        }
+
+            .next:hover, .prev:hover {
+                cursor: pointer;
+                opacity: 1;
+            }
+
+        .next {
+            float: left;
+            padding: 10px 5px 15px 10px;
+            border-top-left-radius: 3px;
+            border-bottom-left-radius: 3px;
+        }
+
+        .prev {
+            left: 0;
+            padding: 10px 10px 15px 5px;
+            border-top-right-radius: 3px;
+            border-bottom-right-radius: 3px;
+        }
+
+        p {
+            margin: 10px 20px;
+            color: #fff;
+        }
+        #Slide{
+            margin-left: auto;
+            margin-right: auto;
+            width: 500px;
+            height: 300px;
+            
+        }
+    </style>
+
+    <figure class="show">
+       
+        <img src="~/Images/Untitled.png" alt="???" width="500" />
+        <figcaption>Texto</figcaption>
+    </figure>
+    <figure>
+        <img src="~/Images/Untitled.png" alt="???" width="500" />
+        <figcaption><p >pal carrito</p></figcaption>
+</figure>
+    <figure>
+        <img src="~/Images/Untitled.png" alt="???" width="500" />
+        <figcaption>3</figcaption>
+
+    </figure>
 
 
-}
-.slideshow{
-  position: absolute;
-  display: block;
-  overflow: hidden;
-}
-figure{
-  position:  absolute;
-  opacity: 0;
-  transition: 1s opacity;
-}
-figcaption{
-  position: absolute;
-  font-family: sans-serif;
-  font-size: .8em;
-  bottom: .75em;
-  right: .35em;
-  padding: .25em;
-  color: #fff;
-  background: rgba(0,0,0, .25);
-  border-radius: 2px;
-}
-figcaption a{
-  color: #fff;
-}
-figure.show{
-  opacity: 1;
-  position: static;
-  transition: 1s opacity;
-}
-.next, .prev{
-  color: #fff;
-  position: absolute;
-  background: rgba(0,0,0, .6);
-  top: 50%;
-  z-index: 1;
-  font-size: 2em;
-  margin-top: -.75em;
-  opacity: .3;
-  user-select: none;
-}
-.next:hover, .prev:hover{
-  cursor: pointer;
-  opacity: 1;
-}
-.next{
-  right: 0;
-  padding: 10px 5px 15px 10px;
-  border-top-left-radius: 3px;
-  border-bottom-left-radius: 3px;
-}
-.prev{
-  left: 0;
-  padding: 10px 10px 15px 5px;
-  border-top-right-radius: 3px;
-  border-bottom-right-radius: 3px;
-}
-p{
-  margin: 10px 20px;
-  color: #fff;
-}
-</style>
-        <figure class="show">
-            <img src="~/Images/Untitled.png" alt="???" width="500" />
-            <figcaption>1</figcaption>
-        </figure>
-        <figure>
-            <img src="~/Images/Untitled.png" alt="???" width="500" />
-            <figcaption>2</figcaption>
-        </figure>
-        <figure>
-            <img src="~/Images/Untitled.png" alt="???" width="500" />
-            <figcaption>3</figcaption>
+    <span class="prev">&laquo;</span>
+    <span class="next">&raquo;</span>
 
-        </figure>
+    <script type="text/javascript" src="~/Scripts/slideshowScript.js"></script>
 
 
-        <span class="prev">&laquo;</span>
-        <span class="next">&raquo;</span>
-
-        <script type="text/javascript" src="~/Scripts/slideshowScript.js"></script>
-
-
-    </div>
+</div>
 
 
 <div class="row">
     <div class="col-md-4">
         <h2>Tienda numero 1</h2>
         <p>
-           Proyecto ASP
+            Proyecto ASP
         </p>
         <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
     </div>
