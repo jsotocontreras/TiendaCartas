@@ -30,7 +30,7 @@
                 </button>
 
             </div>
-
+<!------>
             <html>
             <style>
                 body {
@@ -72,7 +72,7 @@
                 }
             </style>
             <body>
-                <div ng-app="Search">
+                <div ng-app="myForm">
                     <div id="mySidenav" class="sidenav">
                         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
                         
@@ -82,7 +82,17 @@
                 <script>
 
                     function openNav() {
-                        document.getElementById("mySidenav").style.width = "20%";
+                        var x = document.forms["myForm"]["fname"].value;
+                        if (x == null || x == "") {
+                            alert("No hay datos en el sistema");
+                            return false
+                                                      
+                        }
+                        var x = document.forms["myForm"]["fname"].value
+                        if (x == "a") {
+                            document.getElementById("mySidenav").style.width = "20%";
+                            return false
+                        }
                     }
 
                     function closeNav() {
@@ -99,9 +109,13 @@
             <ul class="nav navbar-nav">
 
                 <li>@Html.ActionLink("Inicio", "Index", "Home")</li>
-                <li>@Html.ActionLink("Carrito", "Index", "Carrito")</li>
-
-                <li><input type="text" ng-model="Search" onkeypress="openNav()" /></li>
+                <li>@Html.ActionLink("Carrito", "Index", "Carrito")</li>                
+                <li>
+                    <form name="myForm" action="demo_form.asp">
+                        <input name="fname" id="search" size="30" placeholder="Search">
+                        <input id="submit" type="submit" onclick="return openNav()">
+                    </form>
+                </li>
 
 
             </ul>
