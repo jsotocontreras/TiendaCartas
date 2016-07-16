@@ -22,20 +22,30 @@
         }
 
         figcaption {
-            position:  ;
+            position:  absolute;
             font-family: sans-serif;
             font-size: .8em;
             top: 0;
+            right: 0;
             height: 25px;
             padding: .25em;
             color: #fff;
             background: rgba(0,0,0, .25);
             border-radius: 2px;
+        
         }
 
             figcaption a {
                 color: #fff;
+              
             }
+            figcaption:hover {
+                background-color: black;
+                 transition: 1s;
+                 
+
+            }
+
 
         figure.show {
             opacity: 1;
@@ -45,7 +55,7 @@
 
         .next, .prev {
             color: #fff;
-            position: page;
+            position:  absolute;
             background: rgba(0,0,0, .6);
             top: 50%;
             z-index: 1;
@@ -62,7 +72,7 @@
             }
 
         .next {
-            float: left;
+            right: 0;
             padding: 10px 5px 15px 10px;
             border-top-left-radius: 3px;
             border-bottom-left-radius: 3px;
@@ -90,15 +100,15 @@
 
     <figure class="show">
        
-        <img src="~/Images/Untitled.png" alt="???" width="500" />
+        <img src="~/Images/slideshow1.png" alt="???" width="500" />
         <figcaption>Texto</figcaption>
     </figure>
     <figure>
-        <img src="~/Images/Untitled.png" alt="???" width="500" />
-        <figcaption><p >pal carrito</p></figcaption>
+        <img src="~/Images/slideshow2.png" alt="???" width="500" />
+        <figcaption>pal carrito</figcaption>
 </figure>
     <figure>
-        <img src="~/Images/Untitled.png" alt="???" width="500" />
+        <img src="~/Images/slideshow3.png" alt="???" width="500" />
         <figcaption>3</figcaption>
 
     </figure>
