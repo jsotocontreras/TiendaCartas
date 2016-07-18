@@ -14,49 +14,40 @@ body {
     //margin-left: 400px;
     background-color: white;
     padding: 5px;
-     
-    
 }
 
 .cuerporec li.titulonavleft {
     font-size: 30pt;
-    font-family: Comic Sans MS;
+    font-family:  'Agency FB';
     list-style-image: none;
     font: bolder;
-    position:absolute;
+    position: absolute;
 }
 
 .main-body {
     width: 70%;
-    background-color: whitesmoke;
+    background-color: rgb(254,254,254);
     position: center;
- 
     float: right;
 }
 
-.cuerporec {
+.cuerporec  {
     margin-left: 0;
     background-color: aliceblue;
     font-size: 15pt;
-    font-family: 'Comic Sans MS';
+    font-family: 'Modern No. 20';
     border: solid 2px blue;
-  float: right;
-   
+    float: right;
     width: 29%;
-
-    margin-left: 5px;
-    
-} 
+    padding: 20px;
+}
 
 .main-body .cuerporec {
-    
     position: absolute;
     display: inline-block;
     top: 0;
     padding: 5px;
-    
-    height:  auto;
-   
+    height: auto;
 }
 
 .cuerporec li {
@@ -106,3 +97,6 @@ input {
             transform: scale(0.95);
             background: linear-gradient(#12C5E5,#128DE5);
         }
+        cool-md-4 {
+    color: black;
+}
