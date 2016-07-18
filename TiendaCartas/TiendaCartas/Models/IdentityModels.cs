@@ -21,7 +21,7 @@ namespace TiendaCartas.Models
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
         public ApplicationDbContext()
-            : base("DefaultConnection", throwIfV1Schema: false)
+            : base("tiendacartasEntities", throwIfV1Schema: false)
         {
         }
 
