@@ -1,0 +1,67 @@
+﻿@model TiendaCartas_2.Models.usuario
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>usuario</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.nombre_usuario)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nombre_usuario)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.clave)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.clave)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.correo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.correo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.edad)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.edad)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tipo_usuario)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tipo_usuario)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.foto_usuario)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.foto_usuario)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id_usuario }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
