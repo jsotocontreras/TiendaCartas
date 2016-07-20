@@ -172,6 +172,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\SearchController.cs" />
     <Compile Include="Controllers\usuarioController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -247,6 +248,7 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\navegador.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\_references.js" />
@@ -289,6 +291,8 @@
     <Content Include="Views\usuario\Details.cshtml" />
     <Content Include="Views\usuario\Edit.cshtml" />
     <Content Include="Views\usuario\Index.cshtml" />
+    <Content Include="Views\Search.cshtml" />
+    <Content Include="Views\Search\SearchB.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
