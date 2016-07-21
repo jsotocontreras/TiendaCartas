@@ -1,59 +1,140 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title </title>
-    <script src="../Scripts/navegador.js" type="text/javascript" ></script>
+    <script src="../Scripts/navegador.js" type="text/javascript"></script>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
-
+    <link href="~/Content/EstiloLayout.css" rel="stylesheet" />
+    <template align="center">
+        <a href=@Href("~/Home/Index") />
+        <img src="~/Images/Untitled.png" width="500" height="300" alt="logo">
+    </template>
 </head>
-<body ng-app="">
-    <div class="navbar navbar-inverse navbar-fixed-top">
+
+<body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top nav">
+
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
+
                 </button>
-                @Html.ActionLink("Health Point", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+
             </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Inicio", "Index", "Home")</li>
-                    <li>@Html.ActionLink("Acerca de", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contacto", "Contact", "Home")</li>
-                    <li>
-                       <div >
-                            <form name="myForm" action="demo_form.asp">
-                                <input name="fname" ng-model="Search" size="30" placeholder="Search">
-                                <input id="submit" type="submit" onclick="return openNav()">
-                            </form>
-                    </li>
-            </div>
+            <!------>
+               
+                <div class="search" ng-app="">
+                    <div id="mySidenav" class="sidenav">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                        <a>Resultados: </a> 
+                    </div>
+                </div>  
+        
+        <!------>
+
+        <div class="navbar-collapse collapse">
+            @Html.ActionLink("Health Point", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            <ul class="nav navbar-nav">
+
+                <li>@Html.ActionLink("Inicio", "Index", "Home")</li>
+                <li>@Html.ActionLink("Carrito", "Index", "Carrito")</li>
+                <li>
+                    <div class="search" ng-app="">
+                        <form name="myForm" action="demo_form.asp">
+                            <input name="fname" value="Search" size="30" placeholder="Search">
+                            <input id="submit" type="submit" onclick="return openNav()">
+                        </form>
+                </li>
+
+
+            </ul>
+            @Html.Partial("_LoginPartial")
         </div>
     </div>
-    <div class="container body-content">
-        @RenderBody()
-        <hr />
-        <div>
-            <div id="mySidenav" class="sidenav">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+</div>
 
-                <a>Resultados: {{Search}}</a>
-            </div>
-        </div>
-        <footer>
-            <p>&copy; @DateTime.Now.Year - Mi aplicación ASP.NET</p>
-        </footer>
-    </div>
+<div class="nbar" id="nbar">
 
-    @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
-    @RenderSection("scripts", required: false)
+    <style>
+        #nbar {
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 1000px;
+            background: #333;
+        }
+
+        ul {
+            list-style-type: none;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        li {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+            li a {
+                float: left;
+                display: inline;
+                color: white;
+                padding: 14px 16px;
+                text-decoration: none;
+                background-color: #333;
+            }
+
+                li a:hover {
+                    background-color: #111;
+                    color: white;
+                    text-decoration: none;
+                }
+    </style>
+
+    <ul>
+
+
+        <li><a href="">Mitos y Leyendas</a></li>
+        <li><a href="">Force of Will</a></li>
+        <li><a href="">Magic</a></li>
+        <li><a href="">Yu-Gi-Oh!</a></li>
+        <li><a href="">Tierras Magicas</a></li>
+        <li><a href="">Cazaurio</a></li>
+        <li><a href="">Humankind</a></li>
+        <li><a href="">Accesorios</a></li>
+
+
+
+
+    </ul>
+
+
+
+</div>
+
+
+<div class="container body-content">
+    @RenderBody()
+    <hr />
+    <footer>
+        <p style="color:black">&copy; @DateTime.Now.Year - Mi aplicación ASP.NET</p>
+    </footer>
+</div>
+
+
+@Scripts.Render("~/bundles/jquery")
+@Scripts.Render("~/bundles/bootstrap")
+@RenderSection("scripts", required: false)
 </body>
+
 </html>

@@ -5,7 +5,10 @@
         return false
     }
     else
+        var x = document.forms["myForm"]["fname"].value
+        
         document.getElementById("mySidenav").style.width = "20%";
+    
     return false
 }
 
