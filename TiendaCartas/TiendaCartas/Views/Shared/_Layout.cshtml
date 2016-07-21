@@ -12,7 +12,7 @@
     <link href="~/Content/EstiloLayout.css" rel="stylesheet" />
     <template align="center">
         <a href=@Href("~/Home/Index") />
-        <img src="~/Images/Untitled.png" width="500" height="300" alt="logo">
+        <img src="~/Images/Untitled.png" width="500" height="300" alt="logo">   
     </template>
 </head>
 
@@ -72,13 +72,11 @@
                     margin-left: 50px;
                 }
             </style>
-            <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
             <body>
-                <div ng-app="">
+                <div class="search" ng-app="">
                     <div id="mySidenav" class="sidenav">        
-                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-                        
-                        <a>Resultados: {{Search}}</a>
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>                      
+                        <h:outputLabel value="fname" for="fname" />
                     </div>
                 </div>
                 <script>
@@ -111,15 +109,12 @@
                 <li>@Html.ActionLink("Inicio", "Index", "Home")</li>
                 <li>@Html.ActionLink("Carrito", "Index", "Carrito")</li>                
                 <li>
-                        <div ng-app="">
+                        <div class="search" ng-app="" >
                             <form name="myForm" action="demo_form.asp">
                                 <input name="fname" ng-model="Search" size="30" placeholder="Search">
                                 <input id="submit" type="submit" onclick="return openNav()">
                             </form>
-                    </body>
-                </html>
-
-            </li>
+                </li>
 
 
             </ul>
