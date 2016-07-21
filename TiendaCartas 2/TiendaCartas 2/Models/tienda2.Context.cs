@@ -13,10 +13,10 @@ namespace TiendaCartas_2.Models
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class proyectoEntities1 : DbContext
+    public partial class proyectoEntities2 : DbContext
     {
-        public proyectoEntities1()
-            : base("name=proyectoEntities1")
+        public proyectoEntities2()
+            : base("name=proyectoEntities2")
         {
         }
     
