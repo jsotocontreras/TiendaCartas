@@ -17,18 +17,19 @@ body {
 }
 
 .cuerporec li.titulonavleft {
-    font-size: 30pt;
-    font-family:  'Agency FB';
-    list-style-image: none;
-    font: bolder;
-    position: absolute;
+    //font-size: 30pt;
+    //font-family:  'Agency FB';
+    //list-style-image: none;
+    //font: bolder;
+    //position: absolute;
+    float: left;
+    width: 29%;
 }
 
 .main-body {
-    width: 70%;
-    background-color: rgb(254,254,254);
-    position: center;
-    float: right;
+    width: 600px;
+    background-color: rgb(254,254,254);   
+    float: left;
 }
 
 .cuerporec  {
