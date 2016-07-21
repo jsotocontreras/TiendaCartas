@@ -13,10 +13,10 @@ namespace TiendaCartas_2.Models
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class proyectoEntities : DbContext
+    public partial class proyectoEntities1 : DbContext
     {
-        public proyectoEntities()
-            : base("name=proyectoEntities")
+        public proyectoEntities1()
+            : base("name=proyectoEntities1")
         {
         }
     
@@ -25,10 +25,11 @@ namespace TiendaCartas_2.Models
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<compra> compra { get; set; }
-        public virtual DbSet<noticias> noticias { get; set; }
+        public virtual DbSet<C__MigrationHistory> C__MigrationHistory { get; set; }
+        public virtual DbSet<AspNetRoles> AspNetRoles { get; set; }
+        public virtual DbSet<AspNetUserClaims> AspNetUserClaims { get; set; }
+        public virtual DbSet<AspNetUserLogins> AspNetUserLogins { get; set; }
+        public virtual DbSet<AspNetUsers> AspNetUsers { get; set; }
         public virtual DbSet<producto> producto { get; set; }
-        public virtual DbSet<tipo_pago> tipo_pago { get; set; }
-        public virtual DbSet<usuario> usuario { get; set; }
     }
 }

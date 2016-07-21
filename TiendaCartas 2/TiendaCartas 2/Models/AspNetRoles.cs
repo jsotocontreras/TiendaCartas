@@ -12,24 +12,18 @@ namespace TiendaCartas_2.Models
     using System;
     using System.Collections.Generic;
     
-    public partial class usuario
+    public partial class AspNetRoles
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public usuario()
+        public AspNetRoles()
         {
-            this.compra = new HashSet<compra>();
+            this.AspNetUsers = new HashSet<AspNetUsers>();
         }
     
-        public int id_usuario { get; set; }
-        public string nombre_usuario { get; set; }
-        public string clave { get; set; }
-        public string correo { get; set; }
-        public Nullable<int> edad { get; set; }
-        public string tipo_usuario { get; set; }
-        public string foto_usuario { get; set; }
-        public bool recordar { get; set; }
+        public string Id { get; set; }
+        public string Name { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<compra> compra { get; set; }
+        public virtual ICollection<AspNetUsers> AspNetUsers { get; set; }
     }
 }

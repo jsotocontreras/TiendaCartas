@@ -12,17 +12,12 @@ namespace TiendaCartas_2.Models
     using System;
     using System.Collections.Generic;
     
-    public partial class compra
+    public partial class AspNetUserLogins
     {
-        public int id_compra { get; set; }
-        public Nullable<int> id_usuario { get; set; }
-        public Nullable<int> id_producto { get; set; }
-        public Nullable<int> valor_total { get; set; }
-        public Nullable<System.DateTime> fecha { get; set; }
-        public Nullable<int> id_pago { get; set; }
+        public string LoginProvider { get; set; }
+        public string ProviderKey { get; set; }
+        public string UserId { get; set; }
     
-        public virtual tipo_pago tipo_pago { get; set; }
-        public virtual producto producto { get; set; }
-        public virtual usuario usuario { get; set; }
+        public virtual AspNetUsers AspNetUsers { get; set; }
     }
 }
