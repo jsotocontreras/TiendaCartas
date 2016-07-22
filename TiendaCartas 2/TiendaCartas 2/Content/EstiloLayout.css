@@ -9,11 +9,14 @@ body {
 }
 
 .container.body-content {
-    width: 1000px;
+    /width: 1000px;
     //height:600px;
-    //margin-left: 400px;
-    background-color: white;
+   margin:auto;
+    /background-color: black;
     padding: 5px;
+  
+         position: center;
+   
 }
 
 .cuerporec li.titulonavleft {
@@ -26,20 +29,21 @@ body {
 
 .main-body {
     width: 70%;
-    background-color: rgb(254,254,254);
+    /background-color: red;
     position: center;
-    float: right;
+    float: left;
+    //padding: 5px;
 }
 
 .cuerporec  {
-    margin-left: 0;
-    background-color: aliceblue;
+   // margin-left: 0;
+    /background-color: blue;
     font-size: 15pt;
     font-family: 'Modern No. 20';
-    border: solid 2px blue;
+   
     float: right;
     width: 29%;
-    padding: 20px;
+   // padding: 20px;
 }
 
 .main-body .cuerporec {
@@ -50,6 +54,16 @@ body {
     height: auto;
 }
 
+.cuerporec .well {
+    width: 300px;
+    margin-bottom: 0;
+}
+
+.sectionTitle {
+    font-family: 'Comic Sans MS';
+    //margin-bottom: 100px;
+
+}
 .cuerporec li {
     margin: 6px;
     border-bottom: solid 2px green;
