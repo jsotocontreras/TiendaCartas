@@ -12,18 +12,13 @@ namespace TiendaCartas_2.Models
     using System;
     using System.Collections.Generic;
     
-    public partial class tipo_pago
+    public partial class AspNetUserClaims
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public tipo_pago()
-        {
-            this.compra = new HashSet<compra>();
-        }
+        public int Id { get; set; }
+        public string UserId { get; set; }
+        public string ClaimType { get; set; }
+        public string ClaimValue { get; set; }
     
-        public int id_pago { get; set; }
-        public string pago { get; set; }
-    
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<compra> compra { get; set; }
+        public virtual AspNetUsers AspNetUsers { get; set; }
     }
 }

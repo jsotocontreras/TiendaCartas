@@ -173,19 +173,27 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\SearchController.cs" />
-    <Compile Include="Controllers\usuarioController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
-    <Compile Include="Models\compra.cs">
+    <Compile Include="Models\AspNetRoles.cs">
+      <DependentUpon>tienda2.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AspNetUserClaims.cs">
+      <DependentUpon>tienda2.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AspNetUserLogins.cs">
+      <DependentUpon>tienda2.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AspNetUsers.cs">
+      <DependentUpon>tienda2.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\C__MigrationHistory.cs">
       <DependentUpon>tienda2.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
-    <Compile Include="Models\noticias.cs">
-      <DependentUpon>tienda2.tt</DependentUpon>
-    </Compile>
     <Compile Include="Models\producto.cs">
       <DependentUpon>tienda2.tt</DependentUpon>
     </Compile>
@@ -203,12 +211,6 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>tienda2.edmx</DependentUpon>
-    </Compile>
-    <Compile Include="Models\tipo_pago.cs">
-      <DependentUpon>tienda2.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\usuario.cs">
-      <DependentUpon>tienda2.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
@@ -295,13 +297,6 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
-    <Content Include="Views\usuario\Create.cshtml" />
-    <Content Include="Views\usuario\Delete.cshtml" />
-    <Content Include="Views\usuario\Details.cshtml" />
-    <Content Include="Views\usuario\Edit.cshtml" />
-    <Content Include="Views\usuario\Index.cshtml" />
-    <Content Include="Views\Search.cshtml" />
-    <Content Include="Views\Search\SearchB.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
