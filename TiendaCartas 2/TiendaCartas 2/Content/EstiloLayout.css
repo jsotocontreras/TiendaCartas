@@ -19,6 +19,35 @@ body {
    
 }
 
+.slide {
+height: 500px;
+overflow: hidden;
+}
+
+
+.img-responsive {
+ 
+ height: 125px; 
+ margin: auto;
+ transition-duration: 1s;
+ 
+}
+
+.central-image :hover{
+      
+     transform: scale(2);
+        cursor: pointer;
+        position: relative;
+        z-index: 1;
+
+    }
+
+.central-image {
+    background-color: gray;
+    transition-property: height;
+    transition-duration: 1s
+ 
+}
 .cuerporec li.titulonavleft {
     font-size: 30pt;
     font-family:  'Agency FB';
@@ -55,7 +84,7 @@ body {
 }
 
 .cuerporec .well {
-    width: 300px;
+    width:300px;
     margin-bottom: 0;
 }
 
@@ -75,6 +104,7 @@ body {
     text-decoration: none;
     font-weight: bolder;
     color: red;
+
 }
 
 li.ultimo {
