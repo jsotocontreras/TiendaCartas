@@ -29,19 +29,16 @@
         </dd>
     </dl>
     <dl class="dl-horizontal">
-        @model TiendaCartas_2.Models.LoginViewModel
-        <dt>Contraseña:</dt>
+       
+       
         <dd>
-            [
-            @if (Model.Email=="josuesoto.co@gmail.com")
+            
+            @if (Model.Logins.Equals("josuesoto.co@gmail.com"))
             {
-                @Html.ActionLink("Gestionar Productos", "")
+                @Html.ActionLink("Gestionar Productos", "Index", "productos")
+                @Html.ActionLink("Gestionar Usuarios", "Index", "AspNetUsers")
             }
-            else
-            {
-                @Html.ActionLink("Crear", "SetPassword")
-            }
-            ]
+          
         </dd>
     </dl>
 </div>
