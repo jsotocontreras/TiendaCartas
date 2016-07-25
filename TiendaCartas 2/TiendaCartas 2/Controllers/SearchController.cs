@@ -17,10 +17,9 @@ namespace TiendaCartas_2.Controllers
         public ActionResult Index()
         {
             var productos = from p in db.producto
-                            select new { p.nombre_producto, p.foto_producto }
-                             
-
+                            select new { p.nombre_producto, p.foto_producto };
             return View();
         }
+       
     }
 }
