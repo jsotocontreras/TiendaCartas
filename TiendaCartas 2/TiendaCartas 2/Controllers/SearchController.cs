@@ -16,8 +16,10 @@ namespace TiendaCartas_2.Controllers
         // GET: Search
         public ActionResult Index()
         {
-            var productos = from p in db.producto
-                            select new { p.nombre_producto, p.foto_producto };
+            var productos = (from p in db.producto
+                             where p.nombre_producto == InputType
+                             select new { p.nombre_producto, p.foto_producto     }).ToList();
+
             return View();
         }
        

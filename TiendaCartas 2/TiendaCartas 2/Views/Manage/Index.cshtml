@@ -1,4 +1,5 @@
 ﻿@model TiendaCartas_2.Models.IndexViewModel
+@using TiendaCartas_2.Controllers
 
 @{
     ViewBag.Title = "Perfil";
@@ -33,7 +34,7 @@
        
         <dd>
             
-            @if (Model.Logins.Equals("josuesoto.co@gmail.com"))
+            @if (User.IsInRole("josuesoto.co@gmail.com"))
             {
                 @Html.ActionLink("Gestionar Productos", "Index", "productos")
                 @Html.ActionLink("Gestionar Usuarios", "Index", "AspNetUsers")
