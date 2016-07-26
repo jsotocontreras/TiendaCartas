@@ -18,9 +18,8 @@ namespace TiendaCartas_2.Controllers
         {
             var productos = from p in db.producto
                             select new { p.nombre_producto, p.foto_producto };
-                             
-
             return View();
         }
+       
     }
 }
