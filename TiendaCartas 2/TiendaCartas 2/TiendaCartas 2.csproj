@@ -223,6 +223,8 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\EstiloLayout.css" />
+    <Content Include="Content\HP LOGO s w.png" />
+    <Content Include="Content\HP LOGO s.png" />
     <Content Include="Content\SlideshowStyle.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
