@@ -196,6 +196,7 @@
     </Compile>
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\ModelQuery.cs" />
     <Compile Include="Models\producto.cs">
       <DependentUpon>tienda2.tt</DependentUpon>
     </Compile>
