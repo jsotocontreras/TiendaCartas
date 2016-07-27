@@ -1,5 +1,5 @@
 ﻿@model TiendaCartas_2.Models.IndexViewModel
-@using TiendaCartas_2.Controllers
+]using TiendaCartas_2.Controllers
 
 @{
     ViewBag.Title = "Perfil";
@@ -14,32 +14,22 @@
     <div class="img-circle">
         <img src="~/Images/FotoDefault.jpg" />
     </div>
-    <dl class="dl-horizontal">
-        <dt>Contraseña:</dt>
+    <dl class="dl-horizontal">        
         <dd>
-            [
+            <p>Contraseña: </p>           
             @if (Model.HasPassword)
             {
                 @Html.ActionLink("Cambiar la contraseña", "ChangePassword")
-            }
-            else
-            {
-                @Html.ActionLink("Crear", "SetPassword")
-            }
-            ]
+            }           
         </dd>
     </dl>
-    <dl class="dl-horizontal">
-       
-       
-        <dd>
-            
+    <dl class="dl-horizontal">       
+        <dd>            
+            <p>Administrar Productos: </p>
             @if (User.IsInRole("josuesoto.co@gmail.com"))
             {
-                @Html.ActionLink("Gestionar Productos", "Index", "productos")
-                @Html.ActionLink("Gestionar Usuarios", "Index", "AspNetUsers")
-            }
-          
+                @Html.ActionLink("Gestionar Productos", "Index", "productos")                
+            }          
         </dd>
     </dl>
 </div>
