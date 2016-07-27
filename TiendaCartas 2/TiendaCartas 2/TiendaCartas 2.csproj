@@ -196,6 +196,7 @@
     </Compile>
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\ModelosQuery.cs" />
     <Compile Include="Models\ModelQuery.cs" />
     <Compile Include="Models\producto.cs">
       <DependentUpon>tienda2.tt</DependentUpon>
@@ -314,6 +315,7 @@
     <Content Include="Views\AspNetUsers\Edit.cshtml" />
     <Content Include="Views\AspNetUsers\Index.cshtml" />
     <Content Include="Views\Categorias\MyL.cshtml" />
+    <Content Include="Views\Search\SearchC.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

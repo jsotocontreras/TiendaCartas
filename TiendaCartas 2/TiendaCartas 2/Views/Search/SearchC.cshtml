@@ -1,0 +1,14 @@
+﻿@model IEnumerable<TiendaCartas_2.Models.ModelQuery>
+@{
+    ViewBag.Title = "SearchC";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@foreach (var productos in Model)
+{
+    <tr>
+        <td>@Html.DisplayFor(modlItem => productos.nombrePro)</td>
+        <td>@Html.DisplayFor(modlItem => productos.fotoPro)</td>
+    </tr>
+}
+

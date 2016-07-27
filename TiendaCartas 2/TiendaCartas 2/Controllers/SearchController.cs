@@ -14,21 +14,25 @@ namespace TiendaCartas_2.Controllers
     {
         private proyectoEntities2 db = new proyectoEntities2();
        
-        public ActionResult SearchB(ModelQuery obj)
+        public ActionResult SearchB()
+        {
+            return View();
+        }
+        public ActionResult SearchC(ModelQuery obj)
         {
             var productos = (from p in db.producto
                              where p.nombre_producto == obj.nombrePro
-                             select new { p.nombre_producto, p.foto_producto}).ToList();
+                             select new {nombre = p.nombre_producto, foto = p.foto_producto}).ToList();
 
-         List<ModelQuery> modelos = new List<ModelQuery>();
-            foreach (var viewPro in productos)
+            List<ModelQuery> mo = new List<ModelQuery>();
+            foreach (var item in productos)
             {
-                ModelQuery mq = new ModelQuery();
-                mq.nombrePro = viewPro.nombre_producto;
-                mq.fotoPro = viewPro.foto_producto;
-                modelos.Add(mq);    
+                ModelQuery m = new ModelQuery();
+                m.nombrePro = item.nombre;
+                m.fotoPro = item.foto;
+                mo.Add(m);
             }
-            return View(modelos);
+            return View(mo);
         }
       
        
