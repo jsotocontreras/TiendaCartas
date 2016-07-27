@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿@model TiendaCartas_2.Models.ModelQuery
+<!DOCTYPE html>
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -50,7 +51,8 @@
                 <li>
                     <div class="DeSearch">
                         <form name="myForm" action="~/Search/SearchB">
-                            <input type="search" name="fname"  size="30" placeholder="Search">
+                           <!-- <input type="search" name="fname"  size="30" placeholder="Search">-->
+                            @Html.TextBoxFor(model=> model.nombrePro, new { name = "fname", type = "search", size="30", placeholder="Search"})
                             <input id="submit" type="submit" onclick="return openNav()">
                         </form>
                 </li>

@@ -1,12 +1,16 @@
-﻿
+﻿@model IEnumerable<TiendaCartas_2.Models.ModelQuery>
 @{
     ViewBag.Title = "SearchB";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
+ 
 <select class="DeSearch" name="productos">
-        @foreach (var productos in DBNull.producto)
+        @foreach (var productos in Model)
         {
-
+            <tr>
+                <td>@Html.DisplayFor(modlItem=>productos.nombrePro)</td>
+                <td>@Html.DisplayFor(modlItem=>productos.fotoPro</td>
+            </tr>
         }
 </select>
 
