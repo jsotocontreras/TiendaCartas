@@ -3,12 +3,24 @@
     ViewBag.Title = "SearchC";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-
-@foreach (var productos in Model)
-{
+</br></br>
+<style>
+    table, th, td {
+        margin-left: 15%;
+        background-color: #D8D8D8;
+  }
+</style>
+<table style="width:70%">
     <tr>
-        <td>@Html.DisplayFor(modlItem => productos.nombrePro)</td>
-        <td>@Html.DisplayFor(modlItem => productos.fotoPro)</td>
+        <th>Nombre producto</th>
+        <th>Foto producto</th>
     </tr>
-}
-
+    @foreach (var productos in Model)
+    {
+     <tr>
+        <td>@Html.DisplayFor(modlItem => productos.nombrePro)</td>
+        <td><img src="~/Images/@Html.DisplayFor(modelItem => item.foto_producto)" width="120" height="150" /></td>
+     </tr>
+    }
+   
+</table>

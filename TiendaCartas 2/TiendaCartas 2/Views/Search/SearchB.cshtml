@@ -3,24 +3,19 @@
     ViewBag.Title = "SearchB";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-            <div class="DeSearch">
-                        <form name="myForm" action="~/Search/SearchC">
-                            @Html.TextBoxFor(model => model.nombrePro, new { name = "fname", type = "search", size = "30", placeholder = "Search" })
-                            <input id="submit" type="submit">
-                        </form>
-                </div>
-
-<!--<select class="DeSearch" name="productos">-->
-       
-<!--</select>-->
-
-    <div >
-        <div id="mySidenav" class="sidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-
-            <a>Resultados: {{Search}}</a>
-        </div>
-    </div>
+<div class="deSearch">
+    <h1>Sistema de búsqueda</h1>
+        <form name="myForm" action="~/Search/SearchC">
+        @Html.TextBoxFor(model => model.nombrePro, new { name = "fname", type = "search", size = "40", placeholder = "Search" })
+        <input id="submit" type="submit">
+    </form>
+</div>
+<style>
+    .deSearch{
+        margin-left:35%;
+        margin-top:10%;
+    }
+</style>
 
 
 
