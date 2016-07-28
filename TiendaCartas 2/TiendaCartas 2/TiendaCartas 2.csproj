@@ -223,14 +223,13 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\EstiloLayout.css" />
-    <Content Include="Content\HP LOGO s w.png" />
-    <Content Include="Content\HP LOGO s.png" />
     <Content Include="Content\SlideshowStyle.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="Images\FotoDefault.jpg" />
+    <Content Include="Images\HP_LOGO_s_w.png" />
     <Content Include="Images\icon.png" />
     <Content Include="Images\left_background.png" />
     <Content Include="Images\right_background.png" />
