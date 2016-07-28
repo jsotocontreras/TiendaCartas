@@ -4,8 +4,16 @@
     ViewBag.Title = "Iniciar sesión";
 }
 
-<h2>@ViewBag.Title.</h2>
+
+<style>
+    .row{
+        margin-left:33%;
+        margin-top:5%;
+    }
+   
+</style>
 <div class="row">
+    <h2>@ViewBag.Title.</h2>
     <div class="col-md-8">
         <section id="loginForm">
             @using (Html.BeginForm("Login", "Account", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
